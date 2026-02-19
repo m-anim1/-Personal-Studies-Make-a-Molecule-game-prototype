@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0dxcc4g556nr"]
+
+[ext_resource type="Script" uid="uid://wmndd0vg2evv" path="res://line_2d_code_test.gd" id="1_5lwj8"]
+[ext_resource type="Texture2D" uid="uid://dlis4o6v6kfmj" path="res://icon.svg" id="2_7nhly"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2(26, 16)
+script = ExtResource("1_5lwj8")
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 100.0
+offset_top = 16.0
+offset_right = 236.0
+offset_bottom = 152.0
+scale = Vector2(0.29235, 0.273989)
+icon = ExtResource("2_7nhly")
+
+[node name="Button1" type="Button" parent="."]
+offset_left = 26.0
+offset_top = 16.0
+offset_right = 162.0
+offset_bottom = 152.0
+scale = Vector2(0.232419, 0.24495)
+icon = ExtResource("2_7nhly")
+
+[connection signal="pressed" from="Button2" to="Line2D" method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button1" to="Line2D" method="_on_button_1_pressed"]

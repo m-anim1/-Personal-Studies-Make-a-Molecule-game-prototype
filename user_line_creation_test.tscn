@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://clnnx8ii7j3v4"]
+
+[ext_resource type="Script" uid="uid://bvnqwcwsdmfkr" path="res://path_2d.gd" id="1_5t1mp"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_5t1mp")
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(13, 32, 99, 71)

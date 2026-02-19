@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://lhbr4iad5iey"]
+
+[ext_resource type="Texture2D" uid="uid://b10mc6vbuf4vv" path="res://Hydoxyl_functional_group.png" id="1_ws2gf"]
+[ext_resource type="Script" uid="uid://cq5conkegkv23" path="res://sprite_2d.gd" id="2_0pak6"]
+
+[node name="Sprite2D" type="Sprite2D"]
+texture = ExtResource("1_ws2gf")
+script = ExtResource("2_0pak6")
+
+[node name="Button" type="Button" parent="."]
+offset_left = -116.0
+offset_top = -63.0
+offset_right = 111.0
+offset_bottom = 60.0
+
+[connection signal="button_down" from="Button" to="." method="button_down"]
+[connection signal="button_up" from="Button" to="." method="button_up"]

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dofgtavq53o40"]
+
+[ext_resource type="Texture2D" uid="uid://dwlsxxl2foir" path="res://make_a_molecule_game/Single_hydrogen_atom.png" id="1_unb3h"]
+[ext_resource type="Script" uid="uid://cgm57rngjwd5j" path="res://single_hydrogen_atom.gd" id="2_unb3h"]
+
+[node name="SingleHydrogenAtom" type="Sprite2D"]
+texture = ExtResource("1_unb3h")
+script = ExtResource("2_unb3h")
+
+[node name="button2" type="Button" parent="."]
+offset_left = -55.0
+offset_top = -61.0
+offset_right = 53.0
+offset_bottom = 60.0
+
+[connection signal="button_down" from="button2" to="." method="_on_button_2_button_down"]
+[connection signal="button_up" from="button2" to="." method="_on_button_2_button_up"]
